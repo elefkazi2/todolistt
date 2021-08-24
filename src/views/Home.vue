@@ -1,10 +1,10 @@
 <template>
 <div>
   <v-toolbar dense dark color="indigo" class="pa-0">
-     <v-img class="shrink mr-2" contain src="https://graphiste.com/blog/wp-content/uploads/2016/12/logo-todolist-4.png"
+     <v-img class="shrink mr-2" contain src="../assets/toolbar-image.png"
         transition="scale-transition" width="65"/>
     <v-toolbar-title class="flex text-center"><h1>To Do List</h1></v-toolbar-title>
-    <v-img class="shrink mr-2" contain src="https://graphiste.com/blog/wp-content/uploads/2016/12/logo-todolist-4.png"
+    <v-img class="shrink mr-2" contain src="../assets/toolbar-image.png"
           transition="scale-transition" width="65"/>
   </v-toolbar>
   <v-container>
@@ -30,10 +30,10 @@
               <td><b>{{ item.description }}</b></td>
               <td class="text-center text-decoration-underline"><b v-on:click="validate(key)" v-if="liste_tache[key].validation== valid" class="green--text">{{ item.validation }}</b><b v-on:click="validate(key)" class="red--text" v-else>Pas exécutée</b></td>
               <td class="text-center"><b><v-btn color="white white--text" v-on:click="update(key)">
-                <v-img class="shrink mr-2" contain src="https://p.kindpng.com/picc/s/154-1541056_edit-edit-icon-svg-hd-png-download.png"
+                <v-img class="shrink mr-2" contain src="../assets/edit.png"
                   transition="scale-transition" width="25"/></v-btn></b></td>
               <td class="indigo--text text-center"><b><v-btn color="white white--text" v-on:click="remove(key)">
-                <v-img class="shrink mr-2" contain src="https://media.istockphoto.com/vectors/trash-can-icon-logo-template-illustration-design-vector-eps-10-vector-id1223505692?k=6&m=1223505692&s=612x612&w=0&h=2VAEjHYfLRfeJG3wtPFRfW-bl990Y9CNtm6yhpyU9OU="
+                <v-img class="shrink mr-2" contain src="../assets/remove.jpg"
                   transition="scale-transition" width="35"/></v-btn></b></td>
             </tr>
           </tbody>
@@ -44,7 +44,7 @@
       <v-col col="12" >
         <h1 class="brown--text">La liste des tâches est vide.</h1>
         <center>
-        <v-img class="shrink mr-2" contain src="https://png.pngtree.com/png-vector/20190622/ourlarge/pngtree-checklistcheckexpertiselistclipboard-flat-color-icon-vec-png-image_1490531.jpg" 
+        <v-img class="shrink mr-2" contain src="../assets/fond.jpg" 
             transition="scale-transition"
             width="450"/>
         </center>
